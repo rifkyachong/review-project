@@ -1,0 +1,80 @@
+body {
+	background-color: hsl(180, 100%, 95%);
+}
+
+
+#page-wrapper {
+	margin: 8rem auto;
+	opacity: 0;
+}
+
+
+#title {
+	font-family: "Fira Sans";
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	}
+
+#short-hline {
+	background-color: hsl(180, 100%, 50%);
+	animation: lengthen 1.5s forwards;
+	height: 5px;
+	}
+
+#review {
+	height: 250px;
+}
+
+#reviewbox {
+	max-width: 720px;
+}
+
+#profile-picture {
+	width: 160px;
+	margin-top: 50px;
+	position: relative;
+}
+
+#picture {
+	width: 150px;
+	height: auto;
+	box-shadow: 7px -7px hsl(180, 100%, 75%);
+}
+
+#quotelogo {
+	width: 3em;
+	height: auto;
+	position: absolute;
+	left: 0px;
+}
+
+#profile-job {
+	color: hsl(180, 100%, 35%);
+}
+
+.refreshpage {
+	animation: initialanimation 1.5s forwards;
+}
+
+.transition {
+	animation: fadeoutfadein 2s;
+}
+
+@keyframes initialanimation {
+	0% {position: relative; top: 50px; opacity: 0;}
+	25% {position: relative; top: 50px; opacity: 0;}
+	100% {position: relative; top: 0px; opacity: 1;}
+}
+
+@keyframes fadeoutfadein {
+	0% {opacity: 1;}
+	40% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes lengthen {
+	0% {width: 0;}
+	30% {width: 0;}
+	100% {width: 10em;}
+}
